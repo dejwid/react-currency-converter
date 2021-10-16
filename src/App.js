@@ -22,7 +22,7 @@ function App() {
     if (!!rates) {
       handleAmount1Change(1);
     }
-  }, [rates]);
+  }, [rates,handleAmount1Change]);
 
 
 

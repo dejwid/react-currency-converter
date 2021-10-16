@@ -20,9 +20,12 @@ function App() {
 
   useEffect(() => {
     if (!!rates) {
-      handleAmount1Change(1);
+      function init() {
+        handleAmount1Change(1);
+      }
+      init();
     }
-  }, [rates,handleAmount1Change]);
+  }, [rates]);
 
 
 
